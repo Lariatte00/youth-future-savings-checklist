@@ -3,7 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>청년도약계좌 VS 청년미래적금</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="청년도약계좌 VS 청년미래적금 갈아탈까, 말까?" />
+  <meta property="og:description" content="청년미래적금 갈아타기 전에 확인할 핵심 체크리스트" />
+  <meta property="og:url" content="https://lariatte00.github.io/youth-future-savings-checklist/" />
+  <meta property="og:image" content="https://lariatte00.github.io/youth-future-savings-checklist/thumbnail.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="청년도약계좌 VS 청년미래적금 갈아탈까, 말까?" />
+  <meta name="twitter:description" content="청년미래적금 갈아타기 전에 확인할 핵심 체크리스트" />
+  <meta name="twitter:image" content="https://lariatte00.github.io/youth-future-savings-checklist/thumbnail.png" />
+  <title>청년도약계좌 VS 청년미래적금 갈아탈까, 말까?</title>
   <style>
     :root {
       --bg: #f7f8fc;
@@ -480,23 +492,128 @@
     }
 
 
+
+    .link-note {
+      margin-top: 18px;
+      padding: 17px 18px;
+      border-radius: 20px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #7c2d12;
+      box-shadow: 0 8px 18px rgba(249, 155, 10, 0.08);
+    }
+
+    .link-note strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #f99b0a;
+      font-size: 17px;
+      font-weight: 950;
+      letter-spacing: -0.03em;
+    }
+
+    .link-note p {
+      margin: 0;
+      color: #4b5563;
+      font-size: 15px;
+    }
+
+    .link-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
     .official-link {
-      display: inline-flex;
+      display: flex;
       align-items: center;
+      justify-content: center;
       gap: 7px;
-      margin-top: 14px;
-      padding: 11px 15px;
-      border-radius: 999px;
+      min-height: 52px;
+      padding: 13px 16px;
+      border-radius: 17px;
       background: #ffffff;
       border: 1px solid #bfdbfe;
       color: #1d4ed8;
-      font-size: 14px;
-      font-weight: 850;
+      font-size: 15px;
+      font-weight: 900;
       text-decoration: none;
-      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.08);
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.08);
+      text-align: center;
     }
 
     .official-link:hover {
+      background: #eff6ff;
+    }
+
+    .official-link.orange {
+      border-color: #fed7aa;
+      color: #f99b0a;
+      box-shadow: 0 8px 18px rgba(249, 155, 10, 0.10);
+    }
+
+    .official-link.orange:hover {
+      background: #fff7ed;
+    }
+
+
+    .verified-link-note {
+      margin-top: 22px;
+      padding: 20px;
+      border-radius: 22px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      box-shadow: 0 8px 18px rgba(249, 155, 10, 0.08);
+    }
+
+    .verified-link-note strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #f99b0a;
+      font-size: 18px;
+      font-weight: 950;
+      letter-spacing: -0.03em;
+    }
+
+    .verified-link-note p {
+      margin: 0 0 14px;
+      color: #4b5563;
+      font-size: 15px;
+    }
+
+    .verified-link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 13px 16px;
+      border-radius: 17px;
+      background: #ffffff;
+      border: 1px solid #fed7aa;
+      color: #f99b0a !important;
+      font-size: 15px;
+      font-weight: 950;
+      text-decoration: none !important;
+      box-shadow: 0 8px 18px rgba(249, 155, 10, 0.10);
+      text-align: center;
+    }
+
+    .verified-link-button:hover {
+      background: #fff3df;
+    }
+
+    .verified-fsc-link-wrap {
+      margin-top: 12px;
+    }
+
+    .verified-link-button.blue {
+      border-color: #bfdbfe;
+      color: #1d4ed8 !important;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.08);
+    }
+
+    .verified-link-button.blue:hover {
       background: #eff6ff;
     }
 
@@ -519,6 +636,7 @@
       }
 
       .summary { grid-template-columns: 1fr; }
+      .link-section { grid-template-columns: 1fr; }
       .section { padding: 20px; }
       .section-title { gap: 10px; }
       .section h2 { font-size: 22px; }
@@ -550,7 +668,7 @@
 <body>
   <main class="wrap">
     <header>
-      <div class="eyebrow">청년도약계좌 VS 청년미래적금</div>
+      <div class="eyebrow">청년도약계좌 VS 청년미래적금 갈아탈까, 말까?</div>
       <h1>청년도약계좌<br /><span class="vs">VS</span> 청년미래적금</h1>
       <p class="subtitle">
         갈아타기 전에 확인할 핵심 체크리스트
@@ -560,23 +678,20 @@
         <span class="mark-orange">심사 결과로 확인되는 것</span>과
         <span class="mark-orange">본인이 직접 판단해야 하는 것</span>을 나눠서 보면 훨씬 쉬워요.
       </p>
-      <a class="official-link" href="https://www.fsc.go.kr/no010101/87106" target="_blank" rel="noopener noreferrer">
-        금융위원회 공식 자료 바로가기 ↗
-      </a>
     </header>
 
     <section class="summary" aria-label="핵심 요약">
       <div class="mini">
-        <strong>핵심 판단</strong>
-        <span>우대형 12% 여부</span>
+        <strong>가장 먼저 확인</strong>
+        <span>일반형 / 우대형 결과</span>
       </div>
       <div class="mini warning">
         <strong>주의 사항</strong>
         <span>청년도약계좌 먼저 해지 금지!!</span>
       </div>
       <div class="mini">
-        <strong>돈 흐름</strong>
-        <span>청년도약계좌 해지금 일시납 불가, 매월 납입</span>
+        <strong>갈아타기 핵심</strong>
+        <span>신규가입 후 특별중도해지</span>
       </div>
     </section>
 
@@ -662,7 +777,7 @@
           <div>
             <h3>청년도약계좌 만기까지 남은 기간</h3>
             <p>만기가 얼마 안 남았다면 유지도 가능하지만, 만기가 3년 가까이 남은 상태라면 우대형 12%가 나왔을 경우 청년미래적금으로 갈아타는 쪽이 유리해 보여요.</p>
-            <div class="speech">아기 돼지는 2029년 3월 만기!</div>
+            <div class="speech">나는 2029년 3월 만기!</div>
           </div>
         </article>
 
@@ -777,8 +892,24 @@
         <span class="text">심사 결과 먼저 확인 → 청년미래적금 신규가입 → 청년도약계좌는 마지막에 특별중도해지</span>
       </div>
     </section>
+    <section class="verified-link-note" aria-label="청년미래적금 사이트 안내">
+      <strong>청년미래적금 사이트에서 확인할 수 있는 것</strong>
+      <p>
+        청년미래적금 가입 가능 여부와 만기해지 예상금액을 확인해볼 수 있어요.
+        먼저 결과를 확인한 뒤, 청년도약계좌 갈아타기 여부를 판단하는 게 좋아요.
+      </p>
+      <a class="verified-link-button" href="https://fill4young.kinfa.or.kr/yfs/main" target="_blank" rel="noopener noreferrer">
+        청년미래적금 사이트 바로가기 ↗
+      </a>
+    </section>
 
-    <footer>
+    <section class="verified-fsc-link-wrap" aria-label="금융위원회 공식 보도 자료">
+      <a class="verified-link-button blue" href="https://www.fsc.go.kr/no010101/87106" target="_blank" rel="noopener noreferrer">
+        금융위원회 공식 보도 자료 바로가기 ↗
+      </a>
+    </section>
+
+<footer>
       개인 상황에 따라 결과가 달라질 수 있으므로, 최종 가입·해지 전에는 은행 및 공식 안내를 한 번 더 확인하기.
     </footer>
   </main>
